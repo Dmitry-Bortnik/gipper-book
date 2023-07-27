@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="css/style.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Unbounded:wght@500;600&display=swap"
+        rel="stylesheet">
+    <title>Gipper.book | Сила мгновенных решений </title>
+</head>
+
+<body>
+    @@include('_header.html')
+    <main>
+        <section class="sectionSearch">
+            <div class="container">
+                <div class="mainSearch">
+                    <form action="#">
+                        <input type="serch" placeholder="Жанр, Название, Автор, Рекомендация">
+                        <button class="btn btnXl btnBlue">Найти</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="section sectionProduct">
+            <div class="container">
+                <div class="catalogList catalogTypeOne">
+                    <div class="catalogTypeOneItem">
+                        <div class="row">
+                            <div class="col-4 col-mobile-12">
+                                <a href="product.html" class="catalogTypeOneItem-img">
+                                    <img src="img/book.png" alt="">
+                                </a>
+                                <div class="catalogTypeOneItem-meta">
+                                    <div class="catalogTypeOneItem-like catalogTypeOneItem-like--active">15</div>
+                                    <div class="catalogTypeOneItem-favorite">2</div>
+                                </div>
+                            </div>
+                            <div class="col-8 col-mobile-12">
+                                <a href="product.html" class="catalogTypeOneItem-title">Сила мгновенных решений </a>
+                                <div class="catalogTypeOneItem-author">Малкольм Гладуэлл</div>
+                                <div class="catalogTypeOneItem-tags">
+                                    <a href="#">Психология</a>
+                                </div>
+                                <div class="catalogTypeOneItem-description">
+                                    <p>В этой книге по саморазвитию Малкольм Гладуэлл анализирует процесс принятия
+                                        решений. На богатом материале из области искусств, науки, дизайна, медицины,
+                                        политики и бизнеса он раскрывает закономерности бессознательных решений и
+                                        анализирует факторы, искажающие этот процесс.Автор утверждает, что все решения
+                                        мы принимаем с первого взгляда — за две секунды.</p>
+                                </div>
+                                <div class="catalogTypeOneItem-btns flex">
+                                    <a href="#" class="btn btnXl btnBlue">Взял книгу</a>
+                                    <a href="#" class="btn btnXl btnBlue btnDisabled">Сдал книгу</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section sectionComments">
+            <div class="container">
+                <div class="sectionCommentsHeader">
+                    <a class="active" href="#">Комментарии</a>
+                </div>
+                <div class="sectionCommentsContent">
+                    <div class="comment">
+                        <div class="commentImg"><img src="img/photo_2021-04-02_08-58-27.jpg" alt=""></div>
+                        <div class="commentInfo">
+                            <div class="commentName">Мария Соколова</div>
+                            <div class="date">20.02.2023</div>
+                            <p>Лучшая книга, которая поможет вам разобраться что к чему и почему. Лучшая книга, которая поможет вам разобраться что к чему и почему.</p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div class="commentImg"></div>
+                        <div class="commentInfo">
+                            <div class="commentName">Мария Соколова</div>
+                            <div class="date">20.02.2023</div>
+                            <p>Лучшая книга, которая поможет вам разобраться что к чему и почему. Лучшая книга, которая поможет вам разобраться что к чему и почему.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <span>1</span> из 10
+                    <a class="paginationPrev" href="#"></a>
+                    <a class="paginationNext paginationDisabled" href="#"></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section sectionNewFeedback">
+            <div class="container">
+                <div class="sectionNewFeedbackTitle">Оставьте отзыв</div>
+                <div class="mainSearch">
+                    <form action="#">
+                        <textarea type="text" placeholder="Что думаете о книге?"></textarea>
+                        <button class="btn btnXl btnBlack">Отправить отзыв</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+                
+    </main>
+    @@include('_footer.html')
+    <div id="thx" data-fancybox data-src="#thxModal"></div>
+</body>
+@@include('_modal.html')
+@@include('_scripts.html')
+
+</html>

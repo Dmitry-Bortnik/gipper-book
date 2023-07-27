@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="css/style.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Unbounded:wght@500;600&display=swap"
+        rel="stylesheet">
+    <title>Gipper.book | Главная</title>
+</head>
+
+<body>
+    @@include('_header.html')
+    <main>
+        <section class="section sectionMain">
+            <div class="container">
+                <h1>Найди свою книгу</h1>
+                <div class="mainSearch">
+                    <form action="#">
+                        <input type="serch" placeholder="Жанр, Название, Автор, Рекомендация">
+                        <button class="btn btnXl btnBlue">Найти</button>
+                    </form>
+                </div>
+                <div class="quote">
+                    <p>Каким человеком ты станешь, определят два фактора: <br>люди, с которыми общаешься, и книги,
+                        которые читаешь.</p>
+                    <p class="quoteAuthor"> Робин Шарма</p>
+                </div>
+
+                <a href="personal.html" class="mobileLink">Войти в личный кабинет</a>
+            </div>
+        </section>
+
+        <nav>
+            <div class="container">
+                <a href="#">Психология</a>
+                <a href="#">Менеджмент</a>
+                <a href="#">Научпоп</a>
+                <a href="#">Классика</a>
+                <a href="#">Современная проза</a>
+                <a href="#">Другое</a>
+            </div>
+        </nav>
+
+        <section class="section sectionCatalog">
+            <div class="container">
+                <div class="catalogView">
+                    <a href="#" data-target="catalogTypeOne" class="catalogView-typeOne active"></a>
+                    <a href="#" data-target="catalogTypeTwo" class="catalogView-typeTwo"></a>
+                </div>
+                <div class="catalogList catalogTypeOne" id="catalogTypeOne">
+                    <div class="catalogTypeOneItem">
+                        <div class="row">
+                            <div class="col-4 col-mobile-12">
+                                <a href="product.html" class="catalogTypeOneItem-img">
+                                    <img src="img/book.png" alt="">
+                                </a>
+                                <div class="catalogTypeOneItem-meta">
+                                    <div class="catalogTypeOneItem-like catalogTypeOneItem-like--active">15</div>
+                                    <div class="catalogTypeOneItem-favorite">2</div>
+                                </div>
+                            </div>
+                            <div class="col-8 col-mobile-12">
+                                <a href="product.html" class="catalogTypeOneItem-title">Сила мгновенных решений </a>
+                                <div class="catalogTypeOneItem-author">Малкольм Гладуэлл</div>
+                                <div class="catalogTypeOneItem-tags">
+                                    <a href="#">Психология</a>
+                                </div>
+                                <div class="catalogTypeOneItem-description">
+                                    <p>В этой книге по саморазвитию Малкольм Гладуэлл анализирует процесс принятия
+                                        решений. На богатом материале из области искусств, науки, дизайна, медицины,
+                                        политики и бизнеса он раскрывает закономерности бессознательных решений и
+                                        анализирует факторы, искажающие этот процесс.Автор утверждает, что все решения
+                                        мы принимаем с первого взгляда — за две секунды.</p>
+                                </div>
+                                <div class="catalogTypeOneItem-btns flex">
+                                    <a href="#" class="btn btnXl btnBlue">Взял книгу</a>
+                                    <a href="#" class="btn btnXl btnBlue btnDisabled">Сдал книгу</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalogTypeOneItem">
+                        <div class="row">
+                            <div class="col-4 col-mobile-12">
+                                <a href="product.html" class="catalogTypeOneItem-img">
+                                    <img src="img/book.png" alt="">
+                                </a>
+                                <div class="catalogTypeOneItem-meta">
+                                    <div class="catalogTypeOneItem-like catalogTypeOneItem-like--active">15</div>
+                                    <div class="catalogTypeOneItem-favorite">2</div>
+                                </div>
+                            </div>
+                            <div class="col-8 col-mobile-12">
+                                <a href="product.html" class="catalogTypeOneItem-title">Сила мгновенных решений </a>
+                                <div class="catalogTypeOneItem-author">Малкольм Гладуэлл</div>
+                                <div class="catalogTypeOneItem-tags">
+                                    <a href="#">Психология</a>
+                                </div>
+                                <div class="catalogTypeOneItem-description">
+                                    <p>В этой книге по саморазвитию Малкольм Гладуэлл анализирует процесс принятия
+                                        решений. На богатом материале из области искусств, науки, дизайна, медицины,
+                                        политики и бизнеса он раскрывает закономерности бессознательных решений и
+                                        анализирует факторы, искажающие этот процесс.Автор утверждает, что все решения
+                                        мы принимаем с первого взгляда — за две секунды.</p>
+                                </div>
+                                <div class="catalogTypeOneItem-btns flex">
+                                    <a href="#" class="btn btnXl btnBlue">Взял книгу</a>
+                                    <a href="#" class="btn btnXl btnBlue btnDisabled">Сдал книгу</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalogTypeOneItem">
+                        <div class="row">
+                            <div class="col-4 col-mobile-12">
+                                <a href="product.html" class="catalogTypeOneItem-img">
+                                    <img src="img/book.png" alt="">
+                                </a>
+                                <div class="catalogTypeOneItem-meta">
+                                    <div class="catalogTypeOneItem-like catalogTypeOneItem-like--active">15</div>
+                                    <div class="catalogTypeOneItem-favorite">2</div>
+                                </div>
+                            </div>
+                            <div class="col-8 col-mobile-12">
+                                <a href="product.html" class="catalogTypeOneItem-title">Сила мгновенных решений </a>
+                                <div class="catalogTypeOneItem-author">Малкольм Гладуэлл</div>
+                                <div class="catalogTypeOneItem-tags">
+                                    <a href="#">Психология</a>
+                                </div>
+                                <div class="catalogTypeOneItem-description">
+                                    <p>В этой книге по саморазвитию Малкольм Гладуэлл анализирует процесс принятия
+                                        решений. На богатом материале из области искусств, науки, дизайна, медицины,
+                                        политики и бизнеса он раскрывает закономерности бессознательных решений и
+                                        анализирует факторы, искажающие этот процесс.Автор утверждает, что все решения
+                                        мы принимаем с первого взгляда — за две секунды.</p>
+                                </div>
+                                <div class="catalogTypeOneItem-btns flex">
+                                    <a href="#" class="btn btnXl btnBlue">Взял книгу</a>
+                                    <a href="#" class="btn btnXl btnBlue btnDisabled">Сдал книгу</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                @@include('_catalogTypeTwo.html')
+
+            </div>
+        </section>
+
+        <section class="sectionBanner">
+            <div class="container">
+                <div class="banner">
+                    <div class="bannerInfo">
+                        <p>Тут вы можете порекомендовать книгу для пополнения библиотеки. Есть вопрос или предложение? - <br>Расскажите нам!</p>
+                        <a href="#" class="btn btnL btnBlue">Написать</a>
+                    </div>
+                    <img src="img/banner.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="section sectionCatalog">
+            <div class="container">
+                <div class="catalogList catalogTypeOne" id="catalogTypeOne">
+                    <div class="catalogTypeOneItem">
+                        <div class="row">
+                            <div class="col-4 col-mobile-12">
+                                <a href="product.html" class="catalogTypeOneItem-img">
+                                    <img src="img/book.png" alt="">
+                                </a>
+                                <div class="catalogTypeOneItem-meta">
+                                    <div class="catalogTypeOneItem-like catalogTypeOneItem-like--active">15</div>
+                                    <div class="catalogTypeOneItem-favorite">2</div>
+                                </div>
+                            </div>
+                            <div class="col-8 col-mobile-12">
+                                <a href="product.html" class="catalogTypeOneItem-title">Сила мгновенных решений </a>
+                                <div class="catalogTypeOneItem-author">Малкольм Гладуэлл</div>
+                                <div class="catalogTypeOneItem-tags">
+                                    <a href="#">Психология</a>
+                                </div>
+                                <div class="catalogTypeOneItem-description">
+                                    <p>В этой книге по саморазвитию Малкольм Гладуэлл анализирует процесс принятия
+                                        решений. На богатом материале из области искусств, науки, дизайна, медицины,
+                                        политики и бизнеса он раскрывает закономерности бессознательных решений и
+                                        анализирует факторы, искажающие этот процесс.Автор утверждает, что все решения
+                                        мы принимаем с первого взгляда — за две секунды.</p>
+                                </div>
+                                <div class="catalogTypeOneItem-btns flex">
+                                    <a href="#" class="btn btnXl btnBlue">Взял книгу</a>
+                                    <a href="#" class="btn btnXl btnBlue btnDisabled">Сдал книгу</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalogTypeOneItem">
+                        <div class="row">
+                            <div class="col-4 col-mobile-12">
+                                <a href="product.html" class="catalogTypeOneItem-img">
+                                    <img src="img/book.png" alt="">
+                                </a>
+                                <div class="catalogTypeOneItem-meta">
+                                    <div class="catalogTypeOneItem-like catalogTypeOneItem-like--active">15</div>
+                                    <div class="catalogTypeOneItem-favorite">2</div>
+                                </div>
+                            </div>
+                            <div class="col-8 col-mobile-12">
+                                <a href="product.html" class="catalogTypeOneItem-title">Сила мгновенных решений </a>
+                                <div class="catalogTypeOneItem-author">Малкольм Гладуэлл</div>
+                                <div class="catalogTypeOneItem-tags">
+                                    <a href="#">Психология</a>
+                                </div>
+                                <div class="catalogTypeOneItem-description">
+                                    <p>В этой книге по саморазвитию Малкольм Гладуэлл анализирует процесс принятия
+                                        решений. На богатом материале из области искусств, науки, дизайна, медицины,
+                                        политики и бизнеса он раскрывает закономерности бессознательных решений и
+                                        анализирует факторы, искажающие этот процесс.Автор утверждает, что все решения
+                                        мы принимаем с первого взгляда — за две секунды.</p>
+                                </div>
+                                <div class="catalogTypeOneItem-btns flex">
+                                    <a href="#" class="btn btnXl btnBlue">Взял книгу</a>
+                                    <a href="#" class="btn btnXl btnBlue btnDisabled">Сдал книгу</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    @@include('_footer.html')
+    <div id="thx" data-fancybox data-src="#thxModal"></div>
+</body>
+@@include('_modal.html')
+@@include('_scripts.html')
+
+</html>
