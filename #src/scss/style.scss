@@ -350,7 +350,10 @@ p {
         font-size: 86px;
         margin: 0px;
         color: #fff;
-        @media (max-width:480px){
+        @media (max-width:768px) {
+            font-size: 60px;
+        }
+        @media (max-width:480px) {
             font-size: 40px;
         }
     }
@@ -389,13 +392,13 @@ p {
         }
         textarea {
             border-radius: 100px;
-            border: 3px solid #E3E3E3;
             background: #F5F5F5;
             box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15) inset;
             padding: 20px 22px;
             width: calC(100% - 143px);
             height: 57px;
             resize: none;
+            border: none;
             @media (max-width:480px) {
                 width: 100%;
                 height: 100px;
@@ -467,7 +470,7 @@ nav {
 
 .sectionCatalog {
     margin: 60px 0px;
-    @media (max-width:480px) {
+    @media (max-width:768px) {
         margin: 30px 0px;
     }
 }
@@ -638,14 +641,20 @@ nav {
     justify-content: flex-end;
     border-radius: 18px;
     overflow: hidden;
+    @media (max-width:768px) {
+        height: auto;
+        flex-direction: column;
+    }
     &::before {
-        content: '';
-        background: #1E1E1E;
-        width: 62%;
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        height: 100%;
+        @media (min-width:769px) {
+            content: '';
+            background: #1E1E1E;
+            width: 62%;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            height: 100%;
+        }
     }
     .bannerInfo {
         position: absolute;
@@ -654,17 +663,34 @@ nav {
         width: 62%;
         z-index: 2;
         padding: 50px 0px 50px 60px;
+        @media (max-width:768px) {
+            width: 100%;
+            order: 2;
+            position: relative;
+            background: #1E1E1E;
+            padding: 30px 30px 30px 30px;
+            text-align: center;
+        }
         p {
             color: #FFF;
             font-size: 26px;
             font-weight: 600;
             line-height: 32px;
             margin: 0px;
+            @media (max-width:480px) {
+                font-size: 20px;
+            }
         }
         .btn {
             margin-top: 50px;
             width: 250px;
             text-align: center;
+        }
+    }
+    img {
+        @media (max-width:768px) {
+            width: 100%;
+            order: 1;
         }
     }
 }
@@ -853,7 +879,7 @@ nav {
     padding: 50px 0px;
     background: #1E1E1E;
     margin: 60px 0px 0px 0px;
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
         padding: 30px 0px;
         margin: 45px 0px 0px 0px;
     }
@@ -903,7 +929,7 @@ nav {
         max-width: 100%;
     }
     @media (max-width:480px) {
-        margin: 60px 0px 30px 0px;
+        margin: 30px 0px 10px 0px;
     }
 }
 
@@ -1204,12 +1230,17 @@ a.tagItem {
     font-size: 14px;
     padding: 9px 0px;
     width: 80%;
+    @media (max-width:960px) and (min-width:481px) { 
+        width: calc(100% - 300px);
+    }
     @media (max-width:480px) {
         display: none;
     }
     > div {
+        padding-right: 12px;
         &:nth-child(1) {
             width: 15%;
+            
         }
         &:nth-child(2) {
             width: 50%;
@@ -1238,11 +1269,15 @@ a.tagItem {
         align-items: center;
         width: 80%;
         position: relative;
+        @media (max-width:960px) and (min-width:481px) { 
+            width: calc(100% - 300px);
+        }
         @media (max-width:480px) {
             width: 100%;
             align-items: flex-start;
         }
         > * {
+            padding-right: 12px;
             &:nth-child(1) {
                 width: 15%;
                 @media (max-width:480px) {
@@ -1274,7 +1309,7 @@ a.tagItem {
     @media (max-width:480px) {
         width: 100%;
         margin-top: 16px;
-        justify-content: center;
+        justify-content: flex-start;
     }
 }
 
