@@ -20,7 +20,7 @@
           <img src="img/logo.svg" alt="">
         </a>
         <div class="headerControl flex">
-            <div class="headerControl-personal"><a href="personal.html"></a></div>
+            <div class="headerControl-personal"><a data-remodal-target="modal-auth" href="#"></a></div>
             <div class="headerControl-faq"><a href="#"></a></div>
         </div>
     </div>
@@ -134,7 +134,7 @@
     <footer class="footer">
     <div class="container">
         <div class="footerNav">
-            <a href="#">Написать нам</a>
+            <a href="#" data-remodal-target="modal">Написать нам</a>
             <a href="search.html">Поиск</a>
             <a href="#">Каталог</a>
             <a href="#">Политика конфиденциальности</a>
@@ -148,248 +148,42 @@
 </footer>
     <div id="thx" data-fancybox data-src="#thxModal"></div>
 </body>
-<div id="dialog-content-1" style="display:none;max-width:855px;">
-    <div class="dialog-category">Медицина</div>
-    <h2>Роботизированный обзвон пациентов с целью подтверждения записи</h2>
-    <div class="dialog-content__scroll">
-        <div class="dialog-content__section">
-            <h3>Реализовано:</h3>
-            <ul>
-                <li>С помощью голосового помощника с функцией распознования речи запущен опрос о статусе записи к
-                    специалисту (записаться, отменить, перенести).</li>
-                <li>Подключена переадресация на администратора медицинской клиники для решения вопросов клиента.</li>
-                <li>Помощник при разговоре обращается к клиенту по ФИО и все полученные данные заносит в систему
-                    клиники.</li>
-            </ul>
+<div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <form action="#" id="form-modal">
+        <h3>Оставьте заявку и мы вам ответим в ближайшее время</h3>
+        <div class="form-row">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <input type="text" name="phone" placeholder="+ 7 (___)___-___-__" required>
+            <input type="text" name="email" placeholder="Ваш email" required>
+            <textarea name="comment"></textarea>
         </div>
-        <div class="dialog-content__section">
-            <h3>Результат:</h3>
-            <ul>
-                <li>Благодаря витруальному сотруднику, сократились расходы на обзвон пациентов.</li>
-                <li>Сотрудник разгружен, только при необходимости решать вопрос клиента</li>
-                <li>Помощник при разговоре обращается к клиенту по ФИО и все полученные данные заносит в систему
-                    клиники.</li>
-            </ul>
+        <div class="form-control">
+            <button type="submit">Оставить заявку</button>
         </div>
-    </div>
-    <div class="dialog-footer">
-        <a class="btn btn-blue" target="_blank" href="https://billing.unibell.ru/">Заказать решение</a>
+    </form>
+    <div class="form-thx" style="display: none;">
+        <h3>Спасибо!</h3>
+        <p>Наш менеджер перезвонит <br>Вам в ближайшее время</p>
     </div>
 </div>
 
-<div id="dialog-content-2" style="display:none;max-width:855px;">
-    <div class="dialog-category">ЖКХ, УЖХ</div>
-    <h2>Голосовые оповщения о задолженности</h2>
-    <div class="dialog-content__scroll">
-        <div class="dialog-content__section">
-            <h3>Реализовано:</h3>
-            <ul>
-                <li>Запущена система голосового оповещения абонентов о задолжности.</li>
-                <li>Организованна система выделения номеров для обзвона.</li>
-                <li>Предоставлен индивидуальный доступ к статистике.</li>
-            </ul>
+<div class="remodal" data-remodal-id="modal-auth" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <form action="#" id="form-modal">
+        <h3>Авторизуйтесь на сайте,  чтобы выбрать книгу</h3>
+        <div class="form-row">
+            <input type="text" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Пароль" required>
         </div>
-        <div class="dialog-content__section">
-            <h3>Результат:</h3>
-            <ul>
-                <li>Благодаря голосовому помощнику, сотрудники освободились от функции обзвона должников с
-                    напоминанием об оплате.</li>
-                <li>Увеличилась оплата просроченной задолжности на 10%</li>
-                <li>Сократился список должников.</li>
-            </ul>
+        <div class="form-control">
+            <button type="submit">Войти</button>
         </div>
-    </div>
-    <div class="dialog-footer">
-        <a class="btn btn-blue" target="_blank" href="https://billing.unibell.ru/">Заказать решение</a>
-    </div>
+    </form>
 </div>
-
-<div id="dialog-content-3" style="display:none;max-width:855px;">
-    <div class="dialog-category">Благоустройство города</div>
-    <h2>Борьба с нарушением КоАП </h2>
-    <div class="dialog-content__scroll">
-        <div class="dialog-content__section">
-            <h3>Реализовано:</h3>
-            <ul>
-                <li>Запуск автообзвона с аудио-оповещением на номера правонарушителей, в течении всего дня с 09.00 ч до
-                    18.00 в указанном сотрудником администрации количестве.</li>
-                <li>Организованна мобильной карусели номеров для запуска аудио-оповещения.</li>
-                <li>Индивидуальный доступ к статистике.</li>
-                <li>Организация отчётности: статистика по обзвону, по А,В номерам, выгрузка детализаций, онлайн режим.
-                </li>
-            </ul>
-        </div>
-        <div class="dialog-content__section">
-            <h3>Результат:</h3>
-            <ul>
-                <li>Уменьшилась повторная расклейка объявлений в неположенных местах, со стороны оштрафованных
-                    нарушителей.</li>
-                <li>В городе Грозный полностью прекратилась расклейка объявлений в неположенных местах, благодаря
-                    системе автоматического обзвона</li>
-            </ul>
-        </div>
-    </div>
-    <div class="dialog-footer">
-        <a class="btn btn-blue" target="_blank" href="https://billing.unibell.ru/">Заказать решение</a>
-    </div>
-</div>
-
-<div id="dialog-content-4" style="display:none;max-width:855px;">
-    <div class="dialog-category">Общественное питание и ресторанный бизнес</div>
-    <h2>Вызов официанта и NPS-опросы</h2>
-    <div class="dialog-content__scroll">
-        <div class="dialog-content__section">
-            <h3>Реализовано:</h3>
-            <ul>
-                <li>Интеграция с системами: R-keeper, Sbis, QUARTECH</li>
-                <li>Запущен голосовой робот с возможностью выбора (меню, счет, вызов официанта). </li>
-                <li>Сбор обратной связи от посетителей голосом и с помощью чат-бота в Telegram могут делиться своими
-                    фотографиями и оставлять отзыв</li>
-            </ul>
-        </div>
-        <div class="dialog-content__section">
-            <h3>Результат:</h3>
-            <ul>
-                <li>Получайте достоверную реакцию гостей о качестве обслуживания в вашем заведении</li>
-                <li>Официанты разгружены, нет необходимости несколько раз подходить к одному и тому же столику.</li>
-                <li>Уменьшилось время ожидания обслуживания</li>
-            </ul>
-        </div>
-    </div>
-    <div class="dialog-footer">
-        <a class="btn btn-blue" target="_blank" href="https://billing.unibell.ru/">Заказать решение</a>
-    </div>
-</div>
-
-<div id="dialog-content-5" style="display:none;max-width:855px;">
-    <div class="dialog-category">Cлужба такси</div>
-    <h2>Голосовые оповещения о готовности автомобиля</h2>
-    <div class="dialog-content__scroll">
-        <div class="dialog-content__section">
-            <h3>Реализовано:</h3>
-            <ul>
-                <li>Запущена система голосового оповещания абонентов о статусе готовности автомобиля</li>
-                <li>Организованна система интеграции с taximaster</li>
-                <li>Реализованна функция перевода текстового сообщения в голос</li>
-                <li>Предоставлен индивидуальный доступ к статистике</li>
-            </ul>
-        </div>
-        <div class="dialog-content__section">
-            <h3>Результат:</h3>
-            <ul>
-                <li>Благодаря голосовому помощнику, сократились расходы на информирование о подаче/назначении и
-                    прибытии автомобиля</li>
-                <li>Улучшилось качество сервиса</li>
-            </ul>
-        </div>
-    </div>
-    <div class="dialog-footer">
-        <a class="btn btn-blue" target="_blank" href="https://billing.unibell.ru/">Заказать решение</a>
-    </div>
-</div>
-
-<div id="dialog-content-6" style="display:none;max-width:855px;">
-    <div class="dialog-category">Микрокредитная компания</div>
-    <h2>Интеграция по HTTP API для обзвона клиентов</h2>
-    <div class="dialog-content__scroll">
-        <div class="dialog-content__section">
-            <h3>Реализовано:</h3>
-            <ul>
-                <li>Организация API c использованием уникальных переменных, с номером телефона клиента/абонента и
-                    привязкой ID номера офиса</li>
-                <li>Организованна система переадресации звонка, при успешном ответе абонента, в офис продаж с учётом
-                    места проживания абонента</li>
-                <li>Благодаря автоматически масштабируемой системы были достигнуты максимальные показатели по обработке
-                    входящих заявок (выросло до 350 000 запросов в день).</li>
-                <li>Разработана и внедрена система для самостоятельного изменения логики сценария звонка, со стороны
-                    самого клиента.</li>
-                <li>Запущена система по обработке номера абонента с учётом UTC и местонахождения</li>
-                <li>Постоена логика CallBack (статус звонка) по каждому звонку</li>
-                <li>Предоставлен индивидуальный доступ к статистике</li>
-            </ul>
-        </div>
-        <div class="dialog-content__section">
-            <h3>Результат:</h3>
-            <ul>
-                <li>Снизилась нагрузка на операторов офисов продаж</li>
-                <li>Благодаря автоматизированной системе UNIBELL увеличилась конверсия выданных займов на 4%</li>
-                <li>Под каждый офис продаж заказчика были заведены "компании" для обзвона, благодаря этому был достигнут
-                    контроль качества по каждому звонку и в интерфейсе платформы отображался каждый звонок.</li>
-                <li>Увеличился объем обрабатываемых запросов на 115%</li>
-            </ul>
-        </div>
-    </div>
-    <div class="dialog-footer">
-        <a class="btn btn-blue" target="_blank" href="https://billing.unibell.ru/">Заказать решение</a>
-    </div>
-</div>
-
-<div id="dialog-content-7" style="display:none;max-width:855px;">
-    <div class="dialog-category">Аутсорсинг</div>
-    <h2>Автоматическая запись на собеседование</h2>
-    <div class="dialog-content__scroll">
-        <div class="dialog-content__section">
-            <h3>Реализовано:</h3>
-            <ul>
-                <li>Запущена система обзвона кандидатов по подготовленной базе резюме</li>
-                <li>Скрипт диалога с презентацией вакансии и ответом на основные вопросы</li>
-                <li>Система интеграции с CRM для внесения данных</li>
-                <li>Робот отвечает на входящий звонок, проводит первичное общение с кандидатом, собирает необходимую
-                    информацию, проводит квалификацию, отвечает на популярные вопросы. Далее передает подходящих
-                    кандидатов на менеждера</li>
-            </ul>
-        </div>
-        <div class="dialog-content__section">
-            <h3>Результат:</h3>
-            <ul>
-                <li>Человек обрабатывает около 70 резюме в день, робот — более 1000</li>
-                <li>Экономия с учетом найма, обучения и прочих расходов на персонал — в 8-10 раз по сравнению с роботом
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="dialog-footer">
-        <a class="btn btn-blue" target="_blank" href="https://billing.unibell.ru/">Заказать решение</a>
-    </div>
-</div>
-
-<div id="dialog-content-8" style="display:none;max-width:855px;">
-    <div class="dialog-category">Обучение</div>
-    <h2>Обзвон с целью сбора обратной связи после вебинара или обучения</h2>
-    <div class="dialog-content__scroll">
-        <div class="dialog-content__section">
-            <h3>Реализовано:</h3>
-            <ul>
-                <li>Робот обзванивает по базе номеров перед вебинаром и напоминает о дате и времени, а также людей,
-                    которые посетили прямой эфир</li>
-                <li>Скрипт диалога для записи на полный курс обучения, а также подбор тарифа</li>
-                <li>Система интеграции с CRM для внесения данных</li>
-            </ul>
-        </div>
-        <div class="dialog-content__section">
-            <h3>Результат:</h3>
-            <ul>
-                <li>С помощью голосового помощника с функцией распознования речи запущен опрос для получения обратной
-                    связи</li>
-                <li>Увеличилась конверсия на 20%</li>
-                <li>Повысилась лояльность аудитории</li>
-            </ul>
-        </div>
-    </div>
-    <div class="dialog-footer">
-        <a class="btn btn-blue" target="_blank" href="https://billing.unibell.ru/">Заказать решение</a>
-    </div>
-</div>
-
-
-<!--thx -->
-
-
-<div id="thxModal" style="display:none; max-width:646px;">
-    <h2>Заявка отправлена</h2>
-    <p>Ожидайте звонка от нашего менеджера</p>
-</div>
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="js/remodal.min.js"></script>
 <script src="js/script.js"></script>
+
 
 </html>

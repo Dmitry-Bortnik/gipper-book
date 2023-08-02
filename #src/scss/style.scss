@@ -1,3 +1,6 @@
+@import "remodal";
+@import "remodal-default-theme";
+
 @font-face {
     font-family: 'Tactic Sans';
     src: local('Tactic Sans Regular'), local('Tactic-Sans-Regular'),
@@ -1355,5 +1358,11 @@ a.tagItem {
 .desctopBreadcrumbs {
     @media (max-width:480px) {
         display: none;
+    }
+}
+
+.form-thx {
+    p {
+        font-size: 20px;
     }
 }
