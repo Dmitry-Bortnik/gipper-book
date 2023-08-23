@@ -1165,6 +1165,8 @@ nav .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 nav a {
@@ -2128,7 +2130,19 @@ a.tagItem {
   }
 
   nav {
-    display: none;
+    padding: 16px 0px;
+  }
+
+  nav .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 0px 30px;
+  }
+
+  nav a {
+    font-size: 14px;
+    padding: 6px 0px;
   }
 
   .sectionCatalog {

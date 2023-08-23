@@ -445,13 +445,18 @@ p {
 nav {
     background: #333;
     padding: 22px 0px;
-    @media (max-width:768px) {
-        display: none;
+    @media (max-width:768px) { 
+        padding: 16px 0px;
     }
     .container {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
+        @media (max-width:768px) { 
+            justify-content: center;
+            gap: 0px 30px;
+        }
     }
     a {
         font-size: 20px;
@@ -465,6 +470,10 @@ nav {
         }
         &:nth-child(2n) {
             color: var(--yellowColor);
+        }
+        @media (max-width:768px) {
+            font-size: 14px;
+            padding: 6px 0px;
         }
     }
 }
