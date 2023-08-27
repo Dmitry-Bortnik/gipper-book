@@ -60,3 +60,40 @@ function scrollToTop(e) {
 }
 
 backToTopButton.addEventListener("click", scrollToTop);
+
+// 4. localStogare
+
+document.addEventListener("DOMContentLoaded", function() {
+  const typeOne = document.querySelector('.catalogView-typeOne');
+  const typeTwo = document.querySelector('.catalogView-typeTwo');
+
+  typeOne.addEventListener('click', function() {
+      const productId = typeOne.getAttribute('data-target');
+      localStorage.setItem(`catalogView`, productId);
+  });
+
+  typeTwo.addEventListener('click', function() {
+    const productId = typeTwo.getAttribute('data-target');
+    localStorage.setItem(`catalogView`, productId);
+  });
+
+  const catalogTypeOne = document.getElementById('catalogTypeOne');
+  const catalogTypeTwo = document.getElementById('catalogTypeTwo');
+  const selectedProductType = localStorage.getItem('catalogView');
+
+  const catalogTypeOneLink = document.querySelector('[data-target="catalogTypeOne"]');
+  const catalogTypeTwoLink = document.querySelector('[data-target="catalogTypeTwo"]');
+
+  if (selectedProductType == 'catalogTypeTwo') {
+    catalogTypeOne.style.display = 'none';
+    catalogTypeTwo.style.display = 'block';
+    catalogTypeOneLink.classList.remove('active');
+    catalogTypeTwoLink.classList.add('active');
+  } else if (selectedProductType == 'catalogTypeOne') {
+    catalogTypeOneLink.classList.add('active');
+    catalogTypeTwoLink.classList.remove('active');
+    catalogTypeOne.style.display = 'block';
+    catalogTypeTwo.style.display = 'none';
+  }
+
+});
